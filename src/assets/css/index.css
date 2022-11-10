@@ -8,7 +8,7 @@
   box-sizing: border-box;
 }
 
-body {
+#root {
   max-width: 640px !important;
   min-height: 100vh !important;
   margin: 0 auto !important;
