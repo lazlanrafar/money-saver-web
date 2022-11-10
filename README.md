@@ -1,46 +1,31 @@
-# Getting Started with Create React App
+# Money Saver
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## 📖 Api
 
-In the project directory, you can run:
+In the API folder, I keep my API routes and API calls. Also, I create a generic request function with Axios. Which can be reused for API-requests.
 
-### `npm start`
+## 🖼️ Assets
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+In the assets folders, I have three subfolders. Firstly, the CSS folder where I keep all my in-js-CSS files. Secondly, the images folder and I think this folder speaks for itself. Lastly, the theme folder and the theme folder is for Material-UI.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 🧱 Components
 
-### `npm test`
+Furthermore, we have the famous components folder. Re-usable functions will be put in the components folder and it can be used by functional components in the views folder.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## ☂️ Hooks
 
-### `npm run build`
+The hooks folder is cool but mostly unused. I rarely make custom hooks, but I still keep the folder there in case I have some genius idea that needs to be a hook.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🗺️ Routes
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+In the routes folder, I keep my routes! I think the only 'weird' thing I do in my routes folder is using suspense. I am using suspense to split the code of the views.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## ⌨️ Types
 
-### `npm run eject`
+So, as you know I am using Typescript. Therefore I have a folder called types where I can put in my Typescript types and interfaces. Props types are the only exemption. They get declared above the components themself.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## 🔨 Utils
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+I always create a lot of functions within a component. As a result, the component can become quite bloated. When I feel that is happening I will move the functions within the utils folder. Also, if a function is used by some other component then it is also going to the utils folder.
